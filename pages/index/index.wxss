@@ -1,0 +1,40 @@
+.scroll-view-item {
+  width: 100%;
+  height: 500px;
+}
+
+.bc_green {
+  background-color: green;
+}
+
+.bc_red {
+  background-color: red;
+}
+
+.bc_yellow {
+  background-color: yellow;
+}
+
+.bc_blue {
+  background-color: blue;
+}
+
+.x-view {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.-view2 {
+  top: 0;
+  left: 0;
+}
+
+.-view2 {
+top: 100%;
+left: 0;
+}
+
+.x-swiper {
+  height: 100%;
+}

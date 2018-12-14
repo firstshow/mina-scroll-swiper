@@ -1,0 +1,32 @@
+<!--index.wxml-->
+<view class="x-view">
+  <swiper
+    class="x-swiper"
+    vertical="{{true}}"
+    circular="{{true}}"
+    bindanimationfinish="swiperAnimationfinish"
+    bindchange="swiperChange"
+    height="100%"
+  >
+    <block wx:for="{{list}}" wx:key="{{item.name}}">
+      <swiper-item catchtouchmove="{{catchTouchMoveEvent}}">
+        <scroll-view
+            scroll-y
+            class="x-scroll-view"
+            lower-threshold="100px"
+            bindscrolltolower="lower"
+            bindscrolltoupper="upper"
+            bindtouchmove='touchmove'
+            data-id="{{index}}"
+            scroll-with-animation="{{true}}"
+            style="height: 100%"
+          >
+            <view id="green" class="scroll-view-item bc_green">{{item.name}}</view>
+            <view id="red" class="scroll-view-item bc_red"></view>
+            <view id="yellow" class="scroll-view-item bc_yellow"></view>
+            <view id="blue" class="scroll-view-item bc_blue"></view>
+          </scroll-view>
+      </swiper-item>
+    </block>
+  </swiper>
+</view>
